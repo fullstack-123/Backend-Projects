@@ -1,0 +1,73 @@
+
+POST http://localhost:3000/login/ 
+Content-Type: application/json 
+
+
+{
+    "username":"christopher_phillips",
+    "password":"christy@123"
+}
+
+
+###
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc5NzQ5OTM4fQ.-H_v6juo0jEAsx34prjMC_BgajviLl3iXvAfh4Cc6WE
+
+
+###
+GET http://localhost:3000/states/1/ 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc5NzQ5OTM4fQ.-H_v6juo0jEAsx34prjMC_BgajviLl3iXvAfh4Cc6WE
+
+
+###
+POST http://localhost:3000/districts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc5NzQ5OTM4fQ.-H_v6juo0jEAsx34prjMC_BgajviLl3iXvAfh4Cc6WE
+Content-Type: application/json 
+
+{
+    "districtName":"Bagalkot",
+    "stateId":3,
+    "cases":2323,
+    "cured":2000,
+    "active":315,
+    "deaths":8
+}
+
+
+###
+GET http://localhost:3000/districts/50 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc5NzQ5OTM4fQ.-H_v6juo0jEAsx34prjMC_BgajviLl3iXvAfh4Cc6WE
+
+
+###
+DELETE  http://localhost:3000/districts/49
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc5NzQ5OTM4fQ.-H_v6juo0jEAsx34prjMC_BgajviLl3iXvAfh4Cc6WE
+
+
+###
+PUT http://localhost:3000/districts/50 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc5NzQ5OTM4fQ.-H_v6juo0jEAsx34prjMC_BgajviLl3iXvAfh4Cc6WE
+Content-Type: application/json 
+
+{
+    "districtName":"Nadia",
+    "stateId":3,
+    "cases":9628,
+    "cured":6524,
+    "active":3000,
+    "deaths":104
+}
+
+
+
+### 
+GET http://localhost:3000/states/6/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc5NzQ5OTM4fQ.-H_v6juo0jEAsx34prjMC_BgajviLl3iXvAfh4Cc6WE
+
+
+
+
+
+
+
+
